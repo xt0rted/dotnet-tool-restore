@@ -1,0 +1,13 @@
+name: ".NET Core Local Tool Restore"
+
+description: "Restores your .NET Core local tools"
+
+author: "xt0rted"
+
+branding:
+  icon: "tool"
+  color: "purple"
+
+runs:
+  using: "node12"
+  main: "dist/index.js"

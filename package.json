@@ -1,0 +1,32 @@
+{
+  "name": "dotnet-tool-restore",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Restore your .NET Core local tools",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "package": "ncc build src/main.ts",
+    "release": "npm run package && git add -f dist/",
+    "test": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xt0rted/dotnet-tool-restore.git"
+  },
+  "keywords": [
+    "actions"
+  ],
+  "author": "xt0rted",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.2.0",
+    "@actions/exec": "^1.0.3",
+    "@actions/io": "^1.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^13.7.0",
+    "@zeit/ncc": "^0.21.0",
+    "typescript": "^3.7.2"
+  }
+}
