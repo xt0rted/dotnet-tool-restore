@@ -1,5 +1,7 @@
 # .NET Core Local Tool Restore
 
+[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=xt0rted/dotnet-tool-restore)](https://dependabot.com)
+
 Restore your .NET Core 3.0+ local tools.
 These are located in your `.config/dotnet-tools.json` file.
 
