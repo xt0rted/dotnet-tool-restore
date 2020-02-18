@@ -5,7 +5,7 @@ description: "Restores your .NET Core local tools"
 author: "xt0rted"
 
 branding:
-  icon: "tool"
+  icon: "download"
   color: "purple"
 
 runs:
