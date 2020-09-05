@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "description": "Restore your .NET Core local tools",
-  "main": "dist/index.js",
+  "main": "lib/main.js",
   "scripts": {
     "build": "tsc",
-    "package": "ncc build src/main.ts",
+    "package": "ncc build --source-map --license license.txt",
     "release": "npm run package && git add -f dist/",
     "test": "tsc --noEmit"
   },
