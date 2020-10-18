@@ -26,10 +26,11 @@ function run() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
             const dotnetPath = yield io_1.which('dotnet', true);
-            const additionalSource = core_2.getInput("add-source");
+            const additionalSource = core_1.getInput("add-source");
+            // Perform a naked restore by default
             var dotnetToolRestoreArgs = ["tool", "restore"];
             if (additionalSource) {
-                dotnetToolRestoreArgs.push(`"--add-source=${additionalSource}"`);
+                dotnetToolRestoreArgs.push(`--add-source=${additionalSource}`);
             }
             const installResult = yield exec_1.exec(`"${dotnetPath}"`, dotnetToolRestoreArgs);
             if (installResult !== 0) {
@@ -37,7 +38,7 @@ function run() {
             }
         }
         catch (error) {
-            core_1.setFailed(error.message);
+            core_2.setFailed(error.message);
             throw error;
         }
     });
