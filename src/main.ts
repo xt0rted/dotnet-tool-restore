@@ -12,7 +12,7 @@ export async function run() {
     var dotnetToolRestoreArgs = ["tool", "restore"]
 
     if (additionalSource) {
-      dotnetToolRestoreArgs.push(`"--add-source=${additionalSource}"`)
+      dotnetToolRestoreArgs.push(`--add-source=${additionalSource}`)
     }
 
     const installResult = await exec(`"${dotnetPath}"`, dotnetToolRestoreArgs);
