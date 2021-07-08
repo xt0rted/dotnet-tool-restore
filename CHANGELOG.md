@@ -6,6 +6,10 @@
 - Bumped `@actions/exec` from 1.0.3 to 1.0.4
 - Bumped `@actions/io` from 1.0.2 to 1.1.0
 
+## Version 1.1.0
+
+- Added `add-source`
+
 ## Version 1.0.1
 
 - Fixed branding icon
