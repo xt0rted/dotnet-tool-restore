@@ -11,8 +11,11 @@ export async function run() {
       throw Error("There was an error restoring dotnet local tools");
     }
   } catch (error) {
-    setFailed(error.message);
-    throw error;
+    if (error instanceof Error) {
+      setFailed(error.message);
+    } else {
+      throw error;
+    }
   }
 }
 
