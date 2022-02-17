@@ -1,6 +1,7 @@
 # .NET Core Local Tool Restore
 
-[![CI](https://github.com/xt0rted/dotnet-tool-restore/actions/workflows/ci.yml/badge.svg)](https://github.com/xt0rted/dotnet-tool-restore/actions/workflows/ci.yml)
+[![CI](https://github.com/xt0rted/dotnet-tool-restore/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/xt0rted/dotnet-tool-restore/actions/workflows/ci.yml)
+[![CodeQL](https://github.com/xt0rted/dotnet-tool-restore/actions/workflows/codeql-analysis.yml/badge.svg?branch=main)](https://github.com/xt0rted/dotnet-tool-restore/actions/workflows/codeql-analysis.yml)
 
 Restore your .NET Core 3.0+ local tools.
 These are located in your `.config/dotnet-tools.json` file.
