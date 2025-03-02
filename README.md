@@ -19,7 +19,9 @@ jobs:
       - uses: actions/setup-dotnet@v1
         with:
           dotnet-version: 3.1.101
-      - uses: xt0rted/dotnet-tool-restore@v1
+      - uses: xt0rted/dotnet-tool-restore@v1.1.0
+        with:
+          add-source: https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-tools/nuget/v3/index.json
       - run: dotnet-format --dry-run
 ```
 
