@@ -8,6 +8,11 @@ branding:
   icon: "download"
   color: "purple"
 
+inputs:
+  add-source:
+    description: 'Additional NuGet package source to use during installation'
+    required: false
+
 runs:
   using: "node12"
   main: "dist/index.js"
